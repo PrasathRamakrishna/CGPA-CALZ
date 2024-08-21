@@ -519,7 +519,7 @@
 
                     const gradeCell = document.createElement('td');
                     const gradeSelect = document.createElement('select');
-                    ['O', 'A+', 'A', 'B+', 'B', 'C+', 'C'].forEach(grade => {
+                    ['O', 'A+', 'A', 'B+', 'B', 'C+', 'C','U(arrear)'].forEach(grade => {
                         const option = document.createElement('option');
                         option.value = grade;
                         option.textContent = grade;
@@ -604,6 +604,8 @@
                     return 5;
                 case 'C':
                     return 4;
+                case 'U(arrear)':
+                    return 0;
                 default:
                     return 0;
             }
